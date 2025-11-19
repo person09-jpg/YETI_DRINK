@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Энергия чая</title>
   <style>
     @font-face {
       font-family: 'Zing Rust Dem';
       src: url('ZingRustDem.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
     }
 
     body {
@@ -27,15 +25,14 @@
       text-align: center;
     }
 
-    .header .logo img {
+    .header img {
       max-width: 150px;
       margin-bottom: 10px;
     }
 
-    .header .tagline {
-      font-family: 'Zing Rust Dem', sans-serif;
-      color: #377ceb;
+    .tagline {
       font-size: 1.5em;
+      color: #377ceb;
     }
 
     .main-content {
@@ -47,67 +44,60 @@
     }
 
     .video-section {
+      width: 100%;
+      max-width: 700px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
-      max-width: 700px;
     }
 
-    .video {
+    video {
       width: 100%;
       border-radius: 20px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-      margin-bottom: 15px;
     }
 
-    .video-description {
-      font-family: 'Zing Rust Dem', sans-serif;
+    .desc-box {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 15px;
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
       color: #377ceb;
       font-size: 1.2em;
       white-space: pre-line;
-      text-align: left;
     }
 
     .end-image {
       max-width: 400px;
-      margin: 40px auto;
       display: block;
+      margin: 40px auto;
       border-radius: 10px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     }
 
-    /* Адаптив для мобильных */
     @media (max-width: 768px) {
-      .header .tagline {
-        font-size: 1.2em;
-      }
-      .video-description {
-        font-size: 1em;
-      }
+      .tagline { font-size: 1.2em; }
+      .desc-box { font-size: 1em; }
     }
   </style>
 </head>
 <body>
   <header class="header">
-    <div class="logo">
-      <img src="лого.png" alt="Логотип">
-    </div>
-    <div class="tagline">
-      Замени кофе. Попробуй энергию чая
-    </div>
+    <img src="лого.png" alt="Логотип" />
+    <div class="tagline">Замени кофе. Попробуй энергию чая</div>
   </header>
 
   <main class="main-content">
 
     <!-- Видео 1 -->
     <section class="video-section">
-      <video class="video" autoplay muted playsinline poster="video1-poster.jpg">
-        <source src="video1.gif.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
+      <video autoplay muted playsinline poster="video1-poster.jpg">
+        <source src="video1.gif.mp4" type="video/mp4" />
       </video>
-      <div class="video-description">
- Молочный улун
+      <div class="desc-box">
+Видео 1: Молочный улун
 
 Эффект
 ● мягкая, плавная бодрость;
@@ -126,78 +116,73 @@
 
     <!-- Видео 2 -->
     <section class="video-section">
-      <video class="video" autoplay muted playsinline poster="video2-poster.jpg">
-        <source src="video2.gif.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
+      <video autoplay muted playsinline poster="video2-poster.jpg">
+        <source src="video2.gif.mp4" type="video/mp4" />
       </video>
-      <div class="video-description">
- Габа
+      <div class="desc-box">
+Видео 2: Габа
 
 Эффект
 ● выраженное снижение тревожности;
 ● спокойная концентрация;
 ● расслабление мышц;
-● улучшение качества сна (если пить в течение дня, а не перед сном);
+● улучшение качества сна;
 ● мягкое тонизирующее действие без «разгона».
 
 Чем лучше кофе
-● не вызывает нервозности и панических ощущений;
-● помогает при стрессе и эмоциональном напряжении;
-● нормализует сон, тогда как кофе ухудшает его;
+● не вызывает нервозности;
+● помогает при стрессе;
+● нормализует сон;
 ● воздействие ровное и долгосрочное.
       </div>
     </section>
 
     <!-- Видео 3 -->
     <section class="video-section">
-      <video class="video" autoplay muted playsinline poster="video3-poster.jpg">
-        <source src="video3.gif.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
+      <video autoplay muted playsinline poster="video3-poster.jpg">
+        <source src="video3.gif.mp4" type="video/mp4" />
       </video>
-      <div class="video-description">
- Жасминовый чай
+      <div class="desc-box">
+Видео 3: Жасминовый чай
 
 Эффект
-● лёгкая бодрость и концентрация (кофеин зелёного чая действует мягко);
-● расслабление и успокоение нервной системы (за счёт аромата и L-theanine);
-● улучшение настроения, снимает стресс;
-● мягкая антиоксидантная поддержка организма;
-● помогает пищеварению и немного стимулирует обмен веществ.
+● лёгкая бодрость;
+● расслабление нервной системы;
+● улучшение настроения;
+● антиоксидантная поддержка;
+● улучшает пищеварение.
 
 Чем лучше кофе
-● не вызывает тревожности и скачков давления;
-● мягкая энергия без резкого подъёма;
-● аромат действует успокаивающе, чего у кофе нет;
-● можно пить днём и вечером без риска испортить сон.
+● не вызывает тревожности;
+● мягкая энергия;
+● успокаивающий аромат;
+● можно пить днём и вечером.
       </div>
     </section>
 
     <!-- Видео 4 -->
     <section class="video-section">
-      <video class="video" autoplay muted playsinline poster="video4-poster.jpg">
-        <source src="video4.gif.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
+      <video autoplay muted playsinline poster="video4-poster.jpg">
+        <source src="video4.gif.mp4" type="video/mp4" />
       </video>
-      <div class="video-description">
- ДХП
+      <div class="desc-box">
+Видео 4: ДХП
 
 Эффект
-● ясность ума и хорошая рабочая концентрация;
-● мощное, но мягкое тонизирование;
+● ясность ума;
+● мягкое тонизирование;
 ● ощущение тепла и силы;
 ● улучшает кровообращение;
-● даёт стабильное, уверенное состояние без перевозбуждения.
+● стабильное состояние.
 
 Чем лучше кофе
-● тонизирует плавнее, дольше и без нервного «провала»;
-● не даёт резкого подъёма давления;
-● согревает и повышает выносливость без тахикардии.
+● плавный эффект;
+● не поднимает давление;
+● согревает и повышает выносливость.
       </div>
     </section>
 
-    <!-- Картинка в конце -->
-    <img src="конец.png" alt="Конец" class="end-image">
-
+    <img src="конец.png" class="end-image" />
   </main>
 </body>
 </html>
