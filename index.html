@@ -4,15 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Энергия чая</title>
+
   <style>
+    /* Подключение твоего TTF-файла */
     @font-face {
-      font-family: 'Zing Rust Dem';
-      src: url('ZingRustDem.woff2') format('woff2');
+      font-family: 'ZingRust';
+      src: url('ZingRust.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
     }
 
     body {
       margin: 0;
-      font-family: 'Zing Rust Dem', sans-serif;
+      font-family: 'ZingRust', sans-serif;
       background-color: #ff8abf;
       color: #377ceb;
     }
@@ -33,6 +37,7 @@
     .tagline {
       font-size: 1.5em;
       color: #377ceb;
+      font-family: 'ZingRust', sans-serif;
     }
 
     .main-content {
@@ -67,6 +72,7 @@
       color: #377ceb;
       font-size: 1.2em;
       white-space: pre-line;
+      font-family: 'ZingRust', sans-serif;
     }
 
     .end-image {
@@ -81,24 +87,11 @@
       .tagline { font-size: 1.2em; }
       .desc-box { font-size: 1em; }
     }
-  </style> <style>
-
-  @font-face {
-    font-family: 'ZingRust';
-    src: url('ZingRust.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  body {
-      margin: 0;
-      font-family: 'ZingRust', sans-serif;
-      background-color: #ff8abf;
-      color: #377ceb;
-  }
-
+  </style>
 </head>
+
 <body>
+
   <header class="header">
     <img src="лого.png" alt="Логотип" />
     <div class="tagline">Замени кофе. Попробуй энергию чая</div>
@@ -111,14 +104,15 @@
       <video autoplay muted playsinline poster="video1-poster.jpg">
         <source src="video1.mp4" type="video/mp4" />
       </video>
+
       <div class="desc-box"> 
-        Молочный улун
+Молочный улун
 
 Эффект
- расслабляет, но не усыпляет, улучшает концентрацию, стабилизирует настроение за счёт теанина
+мягкая, плавная бодрость; расслабляет, но не усыпляет; улучшает концентрацию; стабилизирует настроение; не вызывает скачков давления.
 
 Чем лучше кофе
-не вызывает резких скачков энергии, меньше нагрузка на сердце, можно пить в течение дня без «перегрева» нервной системы
+не вызывает резких скачков энергии; меньше нагрузка на сердце; мягче для желудка; можно пить весь день.
       </div>
     </section>
 
@@ -127,15 +121,15 @@
       <video autoplay muted playsinline poster="video2-poster.jpg">
         <source src="video2.mp4" type="video/mp4" />
       </video>
+
       <div class="desc-box">
-        Габа
+Габа
 
 Эффект
-выраженное снижение тревожности; расслабление мышц; улучшение качества сна
+снижение тревожности; спокойная концентрация; расслабление мышц; улучшение сна; мягкий тонус.
 
 Чем лучше кофе
-не вызывает нервозности, помогает при стрессе, нормализует сон
-
+не вызывает нервозности; помогает при стрессе; нормализует сон; действует ровно и мягко.
       </div>
     </section>
 
@@ -144,14 +138,15 @@
       <video autoplay muted playsinline poster="video3-poster.jpg">
         <source src="video3.mp4" type="video/mp4" />
       </video>
+
       <div class="desc-box">
-      Жасминовый чай
+Жасминовый чай
 
 Эффект
-расслабление нервной системы, улучшение настроения, улучшает пищеварение
+лёгкая бодрость; расслабление нервов; улучшение настроения; антиоксидантный эффект; помогает пищеварению.
 
 Чем лучше кофе
-не вызывает тревожности, можно пить днём и вечером 
+не вызывает тревожности; мягкая энергия без скачков; аромат успокаивает; можно пить вечером.
       </div>
     </section>
 
@@ -160,18 +155,21 @@
       <video autoplay muted playsinline poster="video4-poster.jpg">
         <source src="video4.mp4" type="video/mp4" />
       </video>
+
       <div class="desc-box">
-        ДХП
+ДХП
 
 Эффект
-ясность ума, улучшает кровообращение, стабильное состояние
+ясность ума; мягкое тонизирование; улучшение кровообращения; стабильное, уверенное состояние.
 
 Чем лучше кофе
-не поднимает давление, согревает и повышает выносливость
+тонизирует плавнее и дольше; не поднимает давление; согревает и повышает выносливость.
       </div>
     </section>
 
     <img src="конец.png" class="end-image" />
+
   </main>
+
 </body>
 </html>
